@@ -11,18 +11,18 @@
 export default {
 	async fetch(request, env, ctx) {
 		const data = {
-			Colo: request.cf.colo,
-			Continent: request.cf.continent,
-			Country: request.cf.country,
-			City: request.cf.city,
-			Latitude: request.cf.latitude,
-			Longitude: request.cf.longitude,
-			PostalCode: request.cf.postalCode,
-			MetroCode: request.cf.metroCode,
-			Region: request.cf.region,
-			RegionCode: request.cf.regionCode,
-			asOrganization: request.cf.asOrganization,
-			Timezone: request.cf.timezone,
+			colo: request.cf.colo,
+			continent: request.cf.continent,
+			country: request.cf.country,
+			city: request.cf.city,
+			latitude: request.cf.latitude,
+			longitude: request.cf.longitude,
+			postal_code: request.cf.postalCode,
+			metro_code: request.cf.metroCode,
+			region: request.cf.region,
+			region_code: request.cf.regionCode,
+			org: request.cf.asOrganization,
+			timezone: request.cf.timezone,
 			ip: request.headers.get('cf-connecting-ip'),
 		}
 		return new Response(JSON.stringify(data, null, 2), {
