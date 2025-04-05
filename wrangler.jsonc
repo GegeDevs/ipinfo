@@ -5,7 +5,7 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "ipinfo",
-	"main": "src/index.js",
+	"main": "src/_worker.js",
 	"compatibility_date": "2025-04-05",
 	"observability": {
 		"enabled": true
